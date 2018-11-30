@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[NVM]]></title>
+    <url>%2F2018%2F11%2F30%2Fnvm%2F</url>
+    <content type="text"><![CDATA[NVM 快速入门 如果你使用 Node.js ，有时想快速更新 Node.js 版本快速切换 Node.js 版本，而不知道怎么做？本篇文章教你如何使用 NVM 安装管理多个版本的NodeJS 引子 安装Node的方式目前有两种 从官网获取安装 就是从官网下载然后安装，也是安装NodeJS最简单的方式 每次更新 NodeJS 版本都需要重新去官网下载覆盖安装 系统中只能存在一个版本的 NodeJS，不适合对比学习 使用版本管理器安装 这里使用 nvm 就是为了解决上述问题，其他的就不多介绍了，这里引入一篇博文进行一些科普 安装 NVM安装前准备 将原有的 Node.js 卸载掉 建立两个空文件夹 Nvm 与 NodeJS 文件夹名称可以随意但为了以后方便查找，就需要一个有意义的命名，而且建议这两个目录的父级目录不要包含中文与空格 安装进入NVM GitHub 地址 下载 nvm-noinstall.zip 下载好之后的到一个压缩包，将其解压在一之前建立的 Nvm 目录中，然后使用管理员权限运行 install.cmd 之后会弹出一个命令行窗口，直接 Enter (也就是回车键) 随后会弹出一个文本文件，将里面的内容复制，然后全部关掉 在 Nvm 目录下建立一个 settings 的纯文本文件(就是.txt文件) 然后用记事本打开将之前复制的内容粘贴进去, 并且 root 后面添加上 Nvm 目录的绝对路径，在 path 后面添加上之后NodeJS安装目录的据对路径(就是之前上面创建的那个 NodeJS 目录) 保存关闭 环境变量配置 右键 我的电脑 打开如下界面，并点击高级系统设置 找到环境变量，点击进入 找到系统变量版面，新建两个系统变量 NVM_HOME 与 NVM_SYMLINK 它们的值分别对应之前的 root 与 path 也就是 Nvm 与 NodeJS 目录的绝对路径，新建完成后，点击 Path 进入另一个面板 在新建两个 Path 变量 %NVM_HOME% 与 %NVM_SYMLINK% 也就是之前新建的那个两个系统变量，不过注意两边的百分号不能少，这两个百分号的意思大概是引用外面那两个的路径，也就是说这里你要可以直接 写 Nvm 与 NodeJS 目录的绝对路径 为了方便维护，这里写为 %NVM_HOME% 与 %NVM_SYMLINK% ,记住百分号不能少 然后一路确定下去就 OK 了！ 测试NVM 已经安装完成了 这里来测试一下是否安装成功 打开终端(命令行窗口) 输入 nvm version 或者 nvm v 只要不出现不是内部或外部命令就成功了 NVM 常用命令 使用 nvm 下载 好 Node.js 后记得测试一下，使用 node use [指定版本号] 使用指定的版本然后使用 node -v 与 npm -v 检查一下是否成功，如果提示不是内部或外部命令，就需要将其卸载掉重装一般常用的命令就 nvm list nvm install [指定版本号] nvm uninstall [指定版本号] nvm use [指定版本号] nvm list 或者 nvm ls 查看已安装 Node 如果为No installations recognized.表示Nvm当前没有安装管理的node.js，如果有多个 NodeJS且其中一个前面有一个星号 * 表示当前正在使用的 NodeJS版本 nvm list 或者 nvm ls nvm use [指定Node.js版本号] 使用指定 NodeJS 版本 nvm use 8.12.0 nvm install [指定Node.js版本号] 下载指定 NodeJS 版本 nvm install 8.12.0 nvm uninstall [指定Node.js版本号] 删除指定 NodeJS 版本 nvm uninstall 8.12.0 nvm alias [别名] [指定Node.js版本号] 给指定 NodeJS 添加别名 nvm alias dev 8.12.0 nvm unalias [别名] 删除已经定义的别名 nvm unalias dev nvm reinstall-packages [指定Node.js版本号] 在当前使用的 Node 环境下，重新全局安装指定版本号的 Npm 包 nvm reinstall-packages 8.12.0]]></content>
+      <tags>
+        <tag>Node.js</tag>
+      </tags>
+  </entry>
+</search>
