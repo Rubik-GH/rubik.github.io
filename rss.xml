@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Rubik&#39;s Blog</title>
+  
+  
+  <link href="/rss.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-11-30T02:37:34.896Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Rubik</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NVM</title>
+    <link href="http://yoursite.com/2018/11/30/nvm/"/>
+    <id>http://yoursite.com/2018/11/30/nvm/</id>
+    <published>2018-11-30T02:20:29.000Z</published>
+    <updated>2018-11-30T02:37:34.896Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;NVM-快速入门&quot;&gt;&lt;a href=&quot;#NVM-快速入门&quot; class=&quot;headerlink&quot; title=&quot;NVM 快速入门&quot;&gt;&lt;/a&gt;NVM 快速入门&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;如果你使用 Node.js ，有时想快速更新 Node.js 版本快速切换 Node.js 版本，而不知道怎么做？本篇文章教你如何使用 NVM 安装管理多个版本的NodeJS&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[反省]十一月</title>
+    <link href="http://yoursite.com/2018/11/30/%E5%8F%8D%E7%9C%81-%E5%8D%81%E4%B8%80%E6%9C%88/"/>
+    <id>http://yoursite.com/2018/11/30/反省-十一月/</id>
+    <published>2018-11-30T02:19:43.000Z</published>
+    <updated>2018-11-30T02:19:43.817Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
