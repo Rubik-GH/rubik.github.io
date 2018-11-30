@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-30T02:37:34.896Z</updated>
+  <updated>2018-11-30T03:01:25.092Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2018/11/30/nvm/"/>
     <id>http://yoursite.com/2018/11/30/nvm/</id>
     <published>2018-11-30T02:20:29.000Z</published>
-    <updated>2018-11-30T02:37:34.896Z</updated>
+    <updated>2018-11-30T03:01:25.092Z</updated>
     
     <summary type="html">
     
@@ -31,6 +31,8 @@
     
     </summary>
     
+    
+      <category term="Node.js" scheme="http://yoursite.com/tags/Node-js/"/>
     
   </entry>
   
