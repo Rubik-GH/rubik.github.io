@@ -94,7 +94,10 @@
 <meta property="og:image" content="http://yoursite.com/images/2018/12/one/list-001.png">
 <meta property="og:image" content="http://yoursite.com/images/2018/12/one/list-002.png">
 <meta property="og:image" content="http://yoursite.com/images/2018/12/one/list-003.png">
-<meta property="og:updated_time" content="2018-12-01T03:16:22.773Z">
+<meta property="og:image" content="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<meta property="og:image" content="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<meta property="og:image" content="http://yoursite.com/images/2018/12/one/code-001.png">
+<meta property="og:updated_time" content="2018-12-01T10:58:51.609Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown">
 <meta name="twitter:description" content="Markdown 简易入门教程 Markdown 是一款轻量级的标记语言，排版语法简洁,让你更多的专注于文章的内容而非排版样式。">
@@ -454,58 +457,104 @@
 <blockquote>
 <p>We believe that writing is about content, about what you want to say – not about fancy formatting.<br>我们坚信写作写的是内容，所思所想，而不是花样格式。<br>— Ulysses for Mac</p>
 </blockquote>
-<h3 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h3><ul>
-<li>图片<ul>
-<li>语法</li>
+<h3 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h3><p>进行写作的时候，有时候需要引入图片怎么办？别怕，Markdown 支持本地引入图片，同时也支持引入在线图片，语法共有两种。一种是普通引用直接上链接即可。还有一种类似于变量的引用方式，这里叫它标识引用，语法如下</p>
+<ul>
+<li><p>图片</p>
+<ul>
+<li><p>语法<br>Title是什么？当鼠标悬浮在图片上出现的文字叫做Title，无论哪一种Title都可写可不写<br>链接的 Title 可以使用双引号、单引号、圆括号包裹起来，这里使用双引号示范</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">普通引用</span><br><span class="line">![](图片路径 "Title")</span><br><span class="line">![<span class="string">Google</span>](<span class="link">https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "Google"</span>)</span><br><span class="line">标识引用</span><br><span class="line">![][标识名称]</span><br><span class="line">![<span class="string">Google</span>][<span class="symbol">Google</span>]</span><br><span class="line">[<span class="symbol">Google</span>]: <span class="link">https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "Google"</span></span><br><span class="line">这里的链接辨别标识可以是字母、数字、空白和标点符号，但是不区分大小写</span><br><span class="line">![<span class="string">Google</span>][<span class="symbol">Google</span>]</span><br><span class="line">![<span class="string">Google</span>][<span class="symbol">google</span>]</span><br><span class="line">因此这两个链接是一样的</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>样式<br>普通引用(行类式)<br><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" title="Google"><br>标识引用(参考式)<br><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="" title="Google"></p>
+</li>
 </ul>
 </li>
 </ul>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](图片路径)</span><br></pre></td></tr></table></figure>
-<pre><code>+ 样式
-</code></pre><ul>
-<li>链接<ul>
-<li>语法</li>
+<ul>
+<li><p>超链接<br>超链接和图片链接是类似的，同样有两种形式：普通引用、标识引用，只不过超链接前面少一个感叹号 !，这里就不多介绍了</p>
+<ul>
+<li><p>语法</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">显示文本</span>](<span class="link">链接路径 "Title"</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>样式</p>
+</li>
 </ul>
 </li>
 </ul>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">显示文本</span>](<span class="link">链接路径</span>)</span><br></pre></td></tr></table></figure>
-<pre><code>+ 样式
-</code></pre><h3 id="粗体与斜体"><a href="#粗体与斜体" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h3><ul>
+<p><a href="https://rubikwork.github.io/" title="Rubik&#39;s Blog" target="_blank" rel="noopener">Rubik’s Blog</a></p>
+<h3 id="粗体与斜体"><a href="#粗体与斜体" class="headerlink" title="粗体与斜体"></a>粗体与斜体</h3><ul>
 <li><p>粗体</p>
 <ul>
 <li><p>语法</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">**粗体**</span></span><br><span class="line"><span class="strong">__粗体__</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>样式</p>
+<li><p>样式<br><strong>粗体1</strong><br><strong>粗体2</strong></p>
 </li>
 </ul>
 </li>
 <li><p>斜体</p>
 <ul>
 <li><p>语法</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*斜体*</span></span><br><span class="line"><span class="emphasis">_斜体_</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>样式</p>
+<li><p>样式<br><em>斜体</em><br>_斜体_</p>
 </li>
 </ul>
+</li>
+</ul>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>``` 包裹起来就是一个代码块后面可以跟上其的语言名称来显示对应的代码高亮，当然也可以不写</p>
+<ul>
+<li><p>语法<br><img src="/images/2018/12/one/code-001.png" alt=""></p>
+</li>
+<li><p>样式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHello</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hello!'</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><ul>
-<li>语法</li>
+<li>语法<br>表格可以这样书写，使用 : 来标识对其方向 --- 上面的是表头 :号在 ---左面就是左对齐，右边就是右对齐，两边都写就是居中<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|    id      |     name     |    score      |</span><br><span class="line">|    ---     |    :---:     |     ---:      |</span><br><span class="line">|    001     |     Mark     |      90       |</span><br><span class="line">|    002     |     Ford     |      80       |</span><br><span class="line">|    003     |     Alan     |      95       |</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 <ul>
 <li>样式</li>
 </ul>
-<h3 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h3><ul>
-<li>语法</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th style="text-align:center">name</th>
+<th style="text-align:right">score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>001</td>
+<td style="text-align:center">Mark</td>
+<td style="text-align:right">90</td>
+</tr>
+<tr>
+<td>002</td>
+<td style="text-align:center">Ford</td>
+<td style="text-align:right">80</td>
+</tr>
+<tr>
+<td>003</td>
+<td style="text-align:center">Alan</td>
+<td style="text-align:right">95</td>
+</tr>
+</tbody>
+</table>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>在同一行中使用三个以上的星号、减号、下划线，都可以成为一条分割线</p>
 <ul>
-<li>样式</li>
-</ul>
-<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><ul>
 <li><p>语法</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">***</span></span><br><span class="line"><span class="emphasis">___</span></span><br><span class="line"><span class="emphasis">***</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>样式</p>
 </li>
 </ul>
+<hr>
+<hr>
+<hr>
+<h2 id="感谢"><a href="#感谢" class="headerlink" title="感谢"></a>感谢</h2><p>到这里你已经会了Markdown常用的基本写作技巧，快去试试吧！</p>
+<p>感谢以下文章及文章作者<br><a href="https://blog.huihut.com/2017/01/25/MarkdownTutorial/" target="_blank" rel="noopener">HuiHut</a><br><a href="https://sspai.com/post/25137" target="_blank" rel="noopener">少数派</a><br><a href="https://www.jianshu.com/p/q81RER" target="_blank" rel="noopener">简书</a><br><a href="https://segmentfault.com/markdown" target="_blank" rel="noopener">SegmentFault</a></p>
 
       
     </div>
@@ -677,7 +726,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Markdown-简易入门教程"><span class="nav-number">1.</span> <span class="nav-text">Markdown 简易入门教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是-Markdown"><span class="nav-number">1.1.</span> <span class="nav-text">什么是 Markdown ?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用Markdown的优点"><span class="nav-number">1.1.1.</span> <span class="nav-text">使用Markdown的优点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-编辑器"><span class="nav-number">1.2.</span> <span class="nav-text">Markdown 编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-基本语法"><span class="nav-number">1.3.</span> <span class="nav-text">Markdown 基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标题"><span class="nav-number">1.3.1.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">1.3.2.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用"><span class="nav-number">1.3.3.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片与链接"><span class="nav-number">1.3.4.</span> <span class="nav-text">图片与链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#粗体与斜体"><span class="nav-number">1.3.5.</span> <span class="nav-text">粗体与斜体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格"><span class="nav-number">1.3.6.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码框"><span class="nav-number">1.3.7.</span> <span class="nav-text">代码框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分割线"><span class="nav-number">1.3.8.</span> <span class="nav-text">分割线</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Markdown-简易入门教程"><span class="nav-number">1.</span> <span class="nav-text">Markdown 简易入门教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是-Markdown"><span class="nav-number">1.1.</span> <span class="nav-text">什么是 Markdown ?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用Markdown的优点"><span class="nav-number">1.1.1.</span> <span class="nav-text">使用Markdown的优点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-编辑器"><span class="nav-number">1.2.</span> <span class="nav-text">Markdown 编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-基本语法"><span class="nav-number">1.3.</span> <span class="nav-text">Markdown 基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标题"><span class="nav-number">1.3.1.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">1.3.2.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用"><span class="nav-number">1.3.3.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片与链接"><span class="nav-number">1.3.4.</span> <span class="nav-text">图片与链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#粗体与斜体"><span class="nav-number">1.3.5.</span> <span class="nav-text">粗体与斜体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码块"><span class="nav-number">1.3.6.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格"><span class="nav-number">1.3.7.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分割线"><span class="nav-number">1.3.8.</span> <span class="nav-text">分割线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#感谢"><span class="nav-number">1.4.</span> <span class="nav-text">感谢</span></a></li></ol></li></ol></div>
             
 
           </div>
