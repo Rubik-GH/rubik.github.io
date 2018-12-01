@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-30T03:01:25.092Z</updated>
+  <updated>2018-12-01T03:16:22.773Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,9 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown</title>
+    <link href="http://yoursite.com/2018/12/01/Markdown%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2018/12/01/Markdown基本使用/</id>
+    <published>2018-12-01T01:37:59.000Z</published>
+    <updated>2018-12-01T03:16:22.773Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Markdown-简易入门教程&quot;&gt;&lt;a href=&quot;#Markdown-简易入门教程&quot; class=&quot;headerlink&quot; title=&quot;Markdown 简易入门教程&quot;&gt;&lt;/a&gt;Markdown 简易入门教程&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Markdown 是一款轻量级的标记语言，排版语法简洁,让你更多的专注于文章的内容而非排版样式。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title>NVM</title>
-    <link href="http://yoursite.com/2018/11/30/nvm/"/>
-    <id>http://yoursite.com/2018/11/30/nvm/</id>
+    <link href="http://yoursite.com/2018/11/30/NVM%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/2018/11/30/NVM快速入门/</id>
     <published>2018-11-30T02:20:29.000Z</published>
     <updated>2018-11-30T03:01:25.092Z</updated>
     
