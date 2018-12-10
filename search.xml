@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CentOS7简易搭建SS方法]]></title>
+    <url>%2F2018%2F12%2F10%2FCentOS7%E7%AE%80%E6%98%93%E6%90%AD%E5%BB%BASS%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[SS搭建教程 本篇文章教你如何自建服务器搭建ShadowSocks 开启魔法上网，相信点开这篇文章的小伙伴都懂，这里就不多介绍了 服务器的购买这里推荐 Vultr 和 搬瓦工 都比较不错，支持支付宝支付，至于注册于购买这里就不多聊，有需要的可以去Google看看，或者可以看看于文章底部我转载的一个链接，里面有Vultr的搭建方法超详细的讲解。 测试服务器购买完成后首先得测试一下是否可用Windows 先 win + R 输入 cmd,弹出一个黑窗口后在里面输入 ping 你的IP地址 VPS 的使用首先下载 Shell，这里使用 Xshell连接至你的VPS主机 搭建 SS安装依赖包在Xshell的控制台中输入：12curl &quot;https://bootstrap.pypa.io/get-pip.py&quot; -o &quot;get-pip.py&quot;python get-pip.py 安装ShadowSocks12pip install --upgrade pippip install shadowsocks 创建ShadowSocks配置文件1pip install shadowsocks 单端口 123456&#123; &quot;server&quot;: &quot;0.0.0.0&quot;, &quot;server_port&quot;: 2018, &quot;password&quot;: &quot;12345678&quot;, &quot;method&quot;: &quot;aes-256-cfb&quot;&#125; 多端口 1234567891011&#123; &quot;server&quot;: &quot;0.0.0.0&quot;, &quot;port_password&quot;: &#123; &quot;8381&quot;: &quot;password1&quot;, &quot;8382&quot;: &quot;password2&quot;, &quot;8383&quot;: &quot;password3&quot;, &quot;8384&quot;: &quot;password4&quot; &#125;, &quot;timeout&quot;: 300, &quot;method&quot;: &quot;aes-256-cfb&quot;&#125; 配置防火墙1systemctl stop firewalld.service 启动ShadowSocks服务1ssserver -c /etc/shadowsocks.json -d start 到这里配置以及完成了如果想要关闭ShadowSocks，可以使用1ssserver -c /etc/shadowsocks.json -d stop 感谢本文学习于以下链接，用于知识记录，它视乎也是转载的，有需要的可以去看看！ https://www.itwordsweb.com/212.html]]></content>
+      <tags>
+        <tag>SS搭建</tag>
+        <tag>魔法上网</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何判断自己是否学会了一个知识点]]></title>
     <url>%2F2018%2F12%2F02%2F%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E8%87%AA%E5%B7%B1%E6%98%AF%E5%90%A6%E5%AD%A6%E4%BC%9A%E4%BA%86%E4%B8%80%E4%B8%AA%E7%9F%A5%E8%AF%86%E7%82%B9%2F</url>
     <content type="text"><![CDATA[费曼技巧：很好的学习方法 当老师讲解知识点的时候，或者自学的时候，如何判断自己是否已经学会了该知识点呢？本篇文章介绍一个，个人觉得有用的学习方法，费曼学习法！ 导语据说这种学习方法是有物理学家 R.P.Feynman 提出的，所以叫费曼技巧。费曼技巧的核心是以教促学，特点是对学习的内容进行比较深入的理解。例如：高中老师讲的题，谁最清楚谁最了解情形！无疑是你的高中老师，而本篇文章也是我在用费曼技巧来讲述费曼技巧，哈哈哈！ 简单概述当你和你的朋友在学习同一个知识点的时候，如果你学完了，并且完成了任务。随后你的朋友来求助于你，如果你很轻松的就解决了该问题，并给他通俗易懂的语言解释清楚了原由，那么该知识点你目前基本是会了。如果发现在讲述的过程中自己也没有办法讲通，这说明你对该知识点还没有得到很好的理解，还需要重新学习这个知识点，并试图理解讲述不好的部分！以此循环，知道你能完成讲述出来为止。 具体罗列 根据学习材料来学习 “费曼技巧”，如果反省没有理解学习材料，那你就需要重读学习材料或者请教同学或者老师，直到自己认为自己已经了解了所学类容。 假象你要为一个没有学习过“费曼技巧”的同学讲解它。你首先得告诉他学习主题“费曼技巧”，然后把学习内容以讲解的方式书写出来，并试图让一个没有学习过“费曼技巧”的同学听懂 在第二步的过程中，你如果发现自己无法讲通，这说明你对学习材料的这一部分没有很好的理解。此时，你需要重新学习整个材料，并试图理解讲不好的部分，然后重复第二步，知道你能完整的讲解学习材料 找一个人来听你的讲解，并且他会对不容易理解的部分提问。当你试图回答他的提问时，正是你深入理解的过程。 感谢学习完之后，输出的方式有很多，如：跟别人讲述，写博客都可以，写不出来了怎么办，只能滚回去学习咯！ 本篇文字学习至一下文章，如有侵权，请联系删除！ 感谢知乎 教与学的故事]]></content>

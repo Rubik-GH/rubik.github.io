@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-01T11:49:57.486Z</updated>
+  <updated>2018-12-10T01:05:29.633Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS7简易搭建SS方法</title>
+    <link href="http://yoursite.com/2018/12/10/CentOS7%E7%AE%80%E6%98%93%E6%90%AD%E5%BB%BASS%E6%96%B9%E6%B3%95/"/>
+    <id>http://yoursite.com/2018/12/10/CentOS7简易搭建SS方法/</id>
+    <published>2018-12-10T00:44:20.000Z</published>
+    <updated>2018-12-10T01:05:29.633Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;SS搭建教程&quot;&gt;&lt;a href=&quot;#SS搭建教程&quot; class=&quot;headerlink&quot; title=&quot;SS搭建教程&quot;&gt;&lt;/a&gt;SS搭建教程&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;本篇文章教你如何自建服务器搭建ShadowSocks 开启魔法上网，相信点开这篇文章的小伙伴都懂，这里就不多介绍了&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="SS搭建" scheme="http://yoursite.com/tags/SS%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="魔法上网" scheme="http://yoursite.com/tags/%E9%AD%94%E6%B3%95%E4%B8%8A%E7%BD%91/"/>
+    
+  </entry>
   
   <entry>
     <title>如何判断自己是否学会了一个知识点</title>
