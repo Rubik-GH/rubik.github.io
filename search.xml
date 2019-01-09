@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[生活与学习]]></title>
+    <url>%2F2019%2F01%2F09%2F%E7%94%9F%E6%B4%BB%E4%B8%8E%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[必须的学习与工作学习的目的不是为了更高的工资、更好的社会地位，只是为了满足自己的好奇心，为了自己大脑继续成长… 要认真生活，甚至享受孤独！ 认真生活 做任何事情都不能“全职”，因为这样你就没办法成长了，你必须将大量的时间花在生活上、其他的工作上以及学习上。 成功交易者的基本素质在任何时候都持有一定比例（或者起码一定数量的“现金”），因为这个世界没有救世主，只有自己准备好的风险备用金。 让自己知道，自己最需要的，除了现金外，就是自己的成长 无论“现金”、时间还是生活都绝对不可以 ALL-IN（全身投入）,因为有风险！ 享受孤独 在独自一人的时候，没有“表现”“表演”的刻意或者需求。而人在被观察的时候都会动作变形——这也是为什么国际台球比赛选手在家里随随便便都可以打个满贯，到了国际决赛的时候，想打出个满贯就没那么随便那么容易了的原因，因为他们所体会到的外部观察影响了他们的行动。 最近很长时间以来，原本有很多的事情等着我去做，但我却选择性的做那么几件。原因很简单，但我今天才意识到，我在害怕，害怕停滞不前，害怕自己不再成长。因为若是不再成长，我将无法应对接下来的挑战… 失败并不可怕，可怕的是面对失败的无能为力！ 总结所以除了享受孤独之外还要又很好的生活。好生活可不是放在那里就可以的，是需要经营、培养、经营的，除了生活还有又工作，无论什么样的工作，只要做到了，就有一定的成长，有新的境界！ 做全职工作本质是很危险的（离开了它你或许就什么都不是了），而大脑重塑虽然可能。但是一旦长期塑造之后，在想逆转，会非常非常艰难。 今天的感悟来自一本书，哈哈，书名就不告知了，但感谢它！]]></content>
+      <tags>
+        <tag>生活</tag>
+        <tag>总结</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CentOS7简易搭建SS方法]]></title>
     <url>%2F2018%2F12%2F10%2FCentOS7%E7%AE%80%E6%98%93%E6%90%AD%E5%BB%BASS%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[SS搭建教程 本篇文章教你如何自建服务器搭建ShadowSocks 开启魔法上网，相信点开这篇文章的小伙伴都懂，这里就不多介绍了 服务器的购买这里推荐 Vultr 和 搬瓦工 都比较不错，支持支付宝支付，至于注册于购买这里就不多聊，有需要的可以去Google看看，或者可以看看于文章底部我转载的一个链接，里面有Vultr的搭建方法超详细的讲解。 测试服务器购买完成后首先得测试一下是否可用Windows 先 win + R 输入 cmd,弹出一个黑窗口后在里面输入 ping 你的IP地址 VPS 的使用首先下载 Shell，这里使用 Xshell连接至你的VPS主机 搭建 SS安装依赖包在Xshell的控制台中输入：12curl &quot;https://bootstrap.pypa.io/get-pip.py&quot; -o &quot;get-pip.py&quot;python get-pip.py 安装ShadowSocks12pip install --upgrade pippip install shadowsocks 创建ShadowSocks配置文件1pip install shadowsocks 单端口 123456&#123; &quot;server&quot;: &quot;0.0.0.0&quot;, &quot;server_port&quot;: 2018, &quot;password&quot;: &quot;12345678&quot;, &quot;method&quot;: &quot;aes-256-cfb&quot;&#125; 多端口 1234567891011&#123; &quot;server&quot;: &quot;0.0.0.0&quot;, &quot;port_password&quot;: &#123; &quot;8381&quot;: &quot;password1&quot;, &quot;8382&quot;: &quot;password2&quot;, &quot;8383&quot;: &quot;password3&quot;, &quot;8384&quot;: &quot;password4&quot; &#125;, &quot;timeout&quot;: 300, &quot;method&quot;: &quot;aes-256-cfb&quot;&#125; 配置防火墙1systemctl stop firewalld.service 启动ShadowSocks服务1ssserver -c /etc/shadowsocks.json -d start 到这里配置以及完成了如果想要关闭ShadowSocks，可以使用1ssserver -c /etc/shadowsocks.json -d stop 感谢本文学习于以下链接，用于知识记录，它视乎也是转载的，有需要的可以去看看！ https://www.itwordsweb.com/212.html]]></content>

@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-10T01:05:29.633Z</updated>
+  <updated>2019-01-09T02:27:21.301Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>生活与学习</title>
+    <link href="http://yoursite.com/2019/01/09/%E7%94%9F%E6%B4%BB%E4%B8%8E%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://yoursite.com/2019/01/09/生活与学习/</id>
+    <published>2019-01-09T02:21:36.000Z</published>
+    <updated>2019-01-09T02:27:21.301Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;必须的学习与工作&quot;&gt;&lt;a href=&quot;#必须的学习与工作&quot; class=&quot;headerlink&quot; title=&quot;必须的学习与工作&quot;&gt;&lt;/a&gt;必须的学习与工作&lt;/h1&gt;&lt;p&gt;学习的目的不是为了更高的工资、更好的社会地位，只是为了满足自己的好奇心，为了自己大脑继续成长…&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>CentOS7简易搭建SS方法</title>
