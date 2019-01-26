@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[pubsub-js.doc]]></title>
+    <url>%2F2019%2F01%2F26%2Fpubsub-js-doc%2F</url>
+    <content type="text"><![CDATA[PubSub-JS 文档 网上查了蛮长一段时间(或许是我没有注意到吧！)也没看到有相关的中文资料或文档，为了方便索性自己写一个吧，留着备用！文档部分为官方文档”机翻”(个人英文不怎么样，所以大部分机翻)，中间会插杂一些个人的理解及案例！ 功能API 列表 throwException(ex) 返回抛出传递的异常的函数，用作setTimeout的参数 publish(message, data) –&gt; 布尔型 发布消息，将数据传递给它的订阅者 publishSync(message,data) –&gt; 布尔型 同步发布消息，将数据传递给它的订阅者 subscribe(message, func) –&gt; 字符串 | 布尔型 将传递的函数预订到传递的消息。 每个返回的标记都是唯一的，如果您需要取消订阅，应该存储。 如果由于某种原因未注册订阅，则返回false subscribeOnce(message, func) –&gt; PubSub 将传递的函数预订到传递的消息一次 clearAllSubscriptions() 清除所有订阅 clearAllSubscriptions() 按话题清除订阅 subscribeOnce(value) 删除订阅 传递标记时，删除特定订阅。 传递函数时，删除该函数的所有订阅 传递话题时，删除该话题的所有订阅（层次结构） 语法throwException(ex)返回抛出传递的异常的函数，用作setTimeout的参数类别： 全局函数 参数 类型 描述 ex Object 一个错误对象 publishSync(message, data)同步发布消息，将数据传递给它的订阅者类别： 全局函数 参数 类型 描述 message String 要发布的消息 data 要传递给订阅者的数据 subscribe(message, func)将传递的函数预订到传递的消息。 每个返回的标记都是唯一的，如果您需要取消订阅，应该存储。 如果由于某种原因未注册订阅，则返回false类别： 全局函数 参数 类型 描述 message String 订阅的消息 func function 发布新消息时调用的函数 func参数有两个参数 msg: 为该订阅的名称 data: 发布消息处传递过来的数据 subscribeOnce(message, func)将传递的函数预订到传递的消息一次类别： 全局函数 参数 类型 描述 message String 订阅的消息 func Function 发布新消息时调用的函数 clearAllSubscriptions()清除所有订阅类别： 全局函数访问：公开 clearAllSubscriptions()按话题清除订阅类别： 全局函数访问：公开 subscribeOnce(value)删除订阅 传递标记时，删除特定订阅。 传递函数时，删除该函数的所有订阅 传递话题时，删除该话题的所有订阅（层次结构）类别： 全局函数访问：公开 参数 类型 描述 value String/Function 要取消订阅的标记，功能或话题 范例123456789//取消订阅标记var token = PubSub.subscribe('mytopic', myFunc)PubSub.unsubscribe(token)//取消订阅函数PubSub.unsubscribe(myFunc)//取消订阅话题PubSub.unsubscribe('mytopic') 示例PubSub 可用于Vue中的组件之间的互相通信，极为方便，不过在使用之前需要下载使用NPM的下载方式npm install pubsub-js --save然后导入即可12345678910import PubSub from 'pubsub-js'// 发布消息PubSub.publish('test', data)//第一个参数为事件名，第二个参数为可选的是否传递数据// 订阅消息PubSub.subscribe('test', (msg, data) =&gt; &#123; console.log(msg, data)&#125;)// 第一个参数为事件名，第二个参数为触发事件后执行的回调函数，回调函数中第一个参数为事件名，必须，第二个为发布消息是传递过来的数据// 一般使用的就这两个方法，其它的不怎么使用(个人来说) 订阅消息与发布消息的意思(人话版)绑定事件监听 —-订阅消息触发事件 —-发布消息 声明本篇文档翻译于官方文档，加上自己的个人理解而成，转载请注明原链接]]></content>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[生活与学习]]></title>
     <url>%2F2019%2F01%2F09%2F%E7%94%9F%E6%B4%BB%E4%B8%8E%E5%AD%A6%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[必须的学习与工作学习的目的不是为了更高的工资、更好的社会地位，只是为了满足自己的好奇心，为了自己大脑继续成长… 要认真生活，甚至享受孤独！ 认真生活 做任何事情都不能“全职”，因为这样你就没办法成长了，你必须将大量的时间花在生活上、其他的工作上以及学习上。 成功交易者的基本素质在任何时候都持有一定比例（或者起码一定数量的“现金”），因为这个世界没有救世主，只有自己准备好的风险备用金。 让自己知道，自己最需要的，除了现金外，就是自己的成长 无论“现金”、时间还是生活都绝对不可以 ALL-IN（全身投入）,因为有风险！ 享受孤独 在独自一人的时候，没有“表现”“表演”的刻意或者需求。而人在被观察的时候都会动作变形——这也是为什么国际台球比赛选手在家里随随便便都可以打个满贯，到了国际决赛的时候，想打出个满贯就没那么随便那么容易了的原因，因为他们所体会到的外部观察影响了他们的行动。 最近很长时间以来，原本有很多的事情等着我去做，但我却选择性的做那么几件。原因很简单，但我今天才意识到，我在害怕，害怕停滞不前，害怕自己不再成长。因为若是不再成长，我将无法应对接下来的挑战… 失败并不可怕，可怕的是面对失败的无能为力！ 总结所以除了享受孤独之外还要又很好的生活。好生活可不是放在那里就可以的，是需要经营、培养、经营的，除了生活还有又工作，无论什么样的工作，只要做到了，就有一定的成长，有新的境界！ 做全职工作本质是很危险的（离开了它你或许就什么都不是了），而大脑重塑虽然可能。但是一旦长期塑造之后，在想逆转，会非常非常艰难。 今天的感悟来自一本书，哈哈，书名就不告知了，但感谢它！]]></content>
       <tags>
         <tag>生活</tag>
-        <tag>总结</tag>
         <tag>学习</tag>
+        <tag>总结</tag>
       </tags>
   </entry>
   <entry>

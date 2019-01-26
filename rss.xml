@@ -6,7 +6,7 @@
   <link href="/rss.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-09T02:27:21.301Z</updated>
+  <updated>2019-01-26T12:50:43.798Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>pubsub-js.doc</title>
+    <link href="http://yoursite.com/2019/01/26/pubsub-js-doc/"/>
+    <id>http://yoursite.com/2019/01/26/pubsub-js-doc/</id>
+    <published>2019-01-26T12:28:04.000Z</published>
+    <updated>2019-01-26T12:50:43.798Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;PubSub-JS-文档&quot;&gt;&lt;a href=&quot;#PubSub-JS-文档&quot; class=&quot;headerlink&quot; title=&quot;PubSub-JS 文档&quot;&gt;&lt;/a&gt;PubSub-JS 文档&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;网上查了蛮长一段时间(或许是我没有注意到吧！)也没看到有相关的中文资料或文档，为了方便索性自己写一个吧，留着备用！文档部分为官方文档”机翻”(个人英文不怎么样，所以大部分机翻)，中间会插杂一些个人的理解及案例！&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>生活与学习</title>
     <link href="http://yoursite.com/2019/01/09/%E7%94%9F%E6%B4%BB%E4%B8%8E%E5%AD%A6%E4%B9%A0/"/>
     <id>http://yoursite.com/2019/01/09/生活与学习/</id>
     <published>2019-01-09T02:21:36.000Z</published>
-    <updated>2019-01-09T02:27:21.301Z</updated>
+    <updated>2019-01-09T02:27:21.339Z</updated>
     
     <summary type="html">
     
@@ -32,9 +52,9 @@
     
       <category term="生活" scheme="http://yoursite.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
-      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
-    
       <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
